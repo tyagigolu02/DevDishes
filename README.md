@@ -5,11 +5,11 @@
 DevDishes is a modern, responsive website that helps you discover exciting new recipes based on ingredients you have on hand or dish names you're craving. Built with a stunning glassmorphism design, animated gradients, and seamless user experience, finding your next culinary creation has never been more enjoyable.
 
 <p align="center">
-  <img src="images/food_logo.jpg" alt="DevDishes Logo" width="120" />
+  <img src="images/food_logo.png" alt="DevDishes Logo" width="120" />
 </p>
 
 <p align="center">
-  <img src="images/Screenshot-2025-07-26-115825.jpg" alt="DevDishes Screenshot" width="80%" />
+  <img src="images/Screenshot 2025-07-26 115825.png" alt="DevDishes Screenshot" width="80%" />
 </p>
 
 ## ✨ Key Features
@@ -157,8 +157,8 @@ DevDishes/
 │   └── Loading states
 │
 ├── 🖼️ images/
-│   ├── food_logo.jpg # Main application logo
-│   └── Screenshot-2025-07-26-115825.jpg # Application screenshot
+│   ├── food_logo.png # Main application logo
+│   └── Screenshot 2025-07-26 115825.png # Application screenshot
 │
 └── 📖 README.md # Project documentation
 ```
