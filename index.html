@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevDishes – Recipes served with developer precision</title>
+  <link rel="icon" href="./images/food_logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Background particles -->
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="container">
+    <div class="header-section">
+      <img src="./images/food_logo.png" alt="DevDishes Logo" class="main-logo">
+      <h1>DevDishes</h1>
+      <p class="subtitle">Recipes served with developer precision</p>
+    </div>
+
+    <!-- search bar -->
+    <div class="input-section">
+      <input id="ingredients" type="text"
+        placeholder="Enter ingredients or dish names (e.g., chicken, biryani, pasta)" />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <!-- results injected here -->
+    <div id="recipe-results" class="recipes"></div>
+  </div>
+
+  <!-- modal for full recipe -->
+  <div id="recipe-modal" class="modal">
+    <span class="close">&times;</span>
+    <div id="recipe-detail" class="modal-content"></div>
+  </div>
+  <!-- Recipe Finder Footer -->
+  <footer class="recipe-footer">
+    <div class="footer-container">
+      <!-- Brand Section -->
+      <div class="footer-brand">
+        <h2>DevDishes <span class="brand-icon"><img src="./images/food_logo.png" alt="DevDishes Logo"
+              class="site-logo"></span></h2>
+        <p class="brand-tagline">Recipes served with developer precision – your ultimate coding companion!</p>
+        <div class="footer-stats">
+          <span class="stat-item">
+            <strong id="recipe-count">5,000+</strong>
+            <small>Recipes</small>
+          </span>
+          <span class="stat-item">
+            <strong>25+</strong>
+            <small>Cuisines</small>
+          </span>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="https://spoonacular.com/food-api" target="_blank" rel="noopener">🔗 API Source</a></li>
+          <li><a href="#" onclick="showRandomRecipe()">🎲 Random Recipe</a></li>
+          <li><a href="#" onclick="clearSearch()">🔄 Clear Search</a></li>
+        </ul>
+      </div>
+
+      <!-- Popular Ingredients -->
+      <div class="footer-section">
+        <h3>Popular Indian Searches</h3>
+        <div class="popular-tags">
+          <span class="tag" onclick="searchIngredient('chicken curry')">🍛 Chicken Curry</span>
+          <span class="tag" onclick="searchIngredient('biryani')">� Biryani</span>
+          <span class="tag" onclick="searchIngredient('dal')">🍲 Dal</span>
+          <span class="tag" onclick="searchIngredient('paneer')">🧀 Paneer</span>
+          <span class="tag" onclick="searchIngredient('tandoori')">� Tandoori</span>
+          <span class="tag" onclick="searchIngredient('masala')">🌶️ Masala</span>
+        </div>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="https://github.com/tyagigolu02" aria-label="GitHub Repository" class="social-btn">
+            <span>⭐</span> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/tyagigolu02" aria-label="LinkedIn Account" class="social-btn">
+            <span>⭐</span> LinkedIn
+          </a>
+          <a href="https://codewithtyagi.netlify.app/" aria-label="Portfolio" class="social-btn">
+            <span>⭐</span> Portfolio
+          </a>
+          <a href="#" aria-label="Share App" class="social-btn" onclick="shareApp()">
+            <span>🔗</span> Share
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p class="copyright">
+          © <span id="current-year"></span> DevDishes. Made with
+          <span class="heart">❤️</span> for developers who love great food.
+        </p>
+        <p class="attribution">
+          Built by <strong>Deepanshu Tyagi</strong> – Recipes served with developer precision
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
