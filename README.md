@@ -129,64 +129,70 @@ DevDishes is a modern, responsive website that helps you discover exciting new r
 
 ## 📂 Project Architecture
 
-- DevDishes/
-- ├── 📄 index.html # Main application structure
-- │ ├── Header with logo and title
-- │ ├── Search section with glassmorphism
-- │ ├── Results grid container
-- │ ├── Recipe modal system
-- │ └── Footer with branding
-- │
-- ├── 🎨 style.css # Complete styling system (19KB)
-- │ ├── CSS Custom Properties (40+ variables)
-- │ ├── Reset and base styles
-- │ ├── Animated background system
-- │ ├── Responsive grid layouts
-- │ ├── Modal and overlay styles
-- │ ├── Media queries (6 breakpoints)
-- │ ├── Accessibility features
-- │ └── Print optimization
-- │
-- ├── ⚙️ script.js # Application logic (10KB)
-- │ ├── API integration functions
-- │ ├── DOM manipulation utilities
-- │ ├── Event handling system
-- │ ├── Modal management
-- │ ├── Error handling
-- │ └── Loading states
-- │
-- ├── 🖼️ images/
-- │ ├── food_logo.jpg # Main application logo
-- │ └── Screenshot-2025-07-26-115825.jpg # Application screenshot
-- │
-- └── 📖 README.md # Project documentation
+```
+DevDishes/
+├── 📄 index.html # Main application structure
+│   ├── Header with logo and title
+│   ├── Search section with glassmorphism
+│   ├── Results grid container
+│   ├── Recipe modal system
+│   └── Footer with branding
+│
+├── 🎨 style.css # Complete styling system (19KB)
+│   ├── CSS Custom Properties (40+ variables)
+│   ├── Reset and base styles
+│   ├── Animated background system
+│   ├── Responsive grid layouts
+│   ├── Modal and overlay styles
+│   ├── Media queries (6 breakpoints)
+│   ├── Accessibility features
+│   └── Print optimization
+│
+├── ⚙️ script.js # Application logic (10KB)
+│   ├── API integration functions
+│   ├── DOM manipulation utilities
+│   ├── Event handling system
+│   ├── Modal management
+│   ├── Error handling
+│   └── Loading states
+│
+├── 🖼️ images/
+│   ├── food_logo.jpg # Main application logo
+│   └── Screenshot-2025-07-26-115825.jpg # Application screenshot
+│
+└── 📖 README.md # Project documentation
+```
 
 ---
 
 ## ⚙️ Configuration & Customization
 
 ### API Configuration
-- // script.js - Line 3
-- const apiKey = "804549490fb34a349c078c66a4e15f00"; // put here your current API key
-- 
-- // API endpoint configuration
-- const searchUrl = https://api.spoonacular.com/recipes/complexSearch +
-- ?query=${encodeURIComponent(ingredients)} +
-- &includeIngredients=${encodeURIComponent(ingredients)} +
-- &number=20&addRecipeInformation=true&fillIngredients=true&apiKey=${apiKey};
+```javascript
+// script.js - Line 3
+const apiKey = "804549490fb34a349c078c66a4e15f00"; // put here your current API key
+
+// API endpoint configuration
+const searchUrl = `https://api.spoonacular.com/recipes/complexSearch` +
+  `?query=${encodeURIComponent(ingredients)}` +
+  `&includeIngredients=${encodeURIComponent(ingredients)}` +
+  `&number=20&addRecipeInformation=true&fillIngredients=true&apiKey=${apiKey}`;
+```
 
 
 ### Theme Customization
-- /* style.css - CSS Custom Properties /
-- :root {
-- --primary-color: #667eea; / Main brand color /
-- --secondary-color: #764ba2; / Secondary accent /
-- --accent-color: #6b73ff; / Interactive elements */
-- 
-- /* Modify these values to change the entire color scheme /
-- --border-radius: 0.75rem; / Global border radius /
-- --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); / Smooth transitions */
-- }
+```css
+/* style.css - CSS Custom Properties */
+:root {
+  --primary-color: #667eea; /* Main brand color */
+  --secondary-color: #764ba2; /* Secondary accent */
+  --accent-color: #6b73ff; /* Interactive elements */
+  
+  /* Modify these values to change the entire color scheme */
+  --border-radius: 0.75rem; /* Global border radius */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transitions */
+}
+```
 
 ### Responsive Breakpoints
 - **Mobile**: `< 576px` (36em) - Single column layout
@@ -263,10 +269,10 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 <div align="center">
 
-**Made with ❤️ by Deepanshu Tyagi**
+### Made with ❤️ by Deepanshu Tyagi
 
 *Recipes served with developer precision*
 
-[⭐ Star this repo](https://github.com/tyagigolu02/DevDishes) • [🐛 Report Bug](https://github.com/tyagigolu02/DevDishes/issues) • [💡 Request Feature](https://github.com/tyagigolu02/DevDishes/issues)
+[![⭐ Star this repo](https://img.shields.io/badge/⭐-Star%20this%20repo-yellow?style=for-the-badge)](https://github.com/tyagigolu02/DevDishes) [![🐛 Report Bug](https://img.shields.io/badge/🐛-Report%20Bug-red?style=for-the-badge)](https://github.com/tyagigolu02/DevDishes/issues) [![💡 Request Feature](https://img.shields.io/badge/💡-Request%20Feature-blue?style=for-the-badge)](https://github.com/tyagigolu02/DevDishes/issues)
 
 </div>
