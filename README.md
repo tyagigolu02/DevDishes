@@ -2,7 +2,7 @@
 
 **Find your next favorite meal with DevDishes, a beautiful and intuitive recipe discovery web application.**
 
-DevDishes is a modern, responsive web application that helps you discover exciting new recipes based on ingredients you have on hand or dish names you're craving. Built with a stunning glassmorphism design, animated gradients, and seamless user experience, finding your next culinary creation has never been more enjoyable.
+DevDishes is a modern, responsive website that helps you discover exciting new recipes based on ingredients you have on hand or dish names you're craving. Built with a stunning glassmorphism design, animated gradients, and seamless user experience, finding your next culinary creation has never been more enjoyable.
 
 <p align="center">
   <img src="images/food_logo.jpg" alt="DevDishes Logo" width="120" />
@@ -86,6 +86,8 @@ DevDishes is a modern, responsive web application that helps you discover exciti
 ### Installation & Setup
 
 1. **Clone the repository**
+   - git clone https://github.com/tyagigolu02/DevDishes.git
+   - cd DevDishes
 
 2. **Configure API Key**
    - Open `script.js`
@@ -94,9 +96,9 @@ DevDishes is a modern, responsive web application that helps you discover exciti
 
 3. **Launch the application**
 
-**Option A: Direct Browser Access**
+**Option A: Direct Browser Access (Recommended)**
 
-**Option B: Local Development Server (Recommended)**
+**Option B: Local Development Server**
 
 **Option C: VS Code Live Server**
 - Install Live Server extension
@@ -127,64 +129,64 @@ DevDishes is a modern, responsive web application that helps you discover exciti
 
 ## 📂 Project Architecture
 
-DevDishes/
-├── 📄 index.html # Main application structure
-│ ├── Header with logo and title
-│ ├── Search section with glassmorphism
-│ ├── Results grid container
-│ ├── Recipe modal system
-│ └── Footer with branding
-│
-├── 🎨 style.css # Complete styling system (19KB)
-│ ├── CSS Custom Properties (40+ variables)
-│ ├── Reset and base styles
-│ ├── Animated background system
-│ ├── Responsive grid layouts
-│ ├── Modal and overlay styles
-│ ├── Media queries (6 breakpoints)
-│ ├── Accessibility features
-│ └── Print optimization
-│
-├── ⚙️ script.js # Application logic (10KB)
-│ ├── API integration functions
-│ ├── DOM manipulation utilities
-│ ├── Event handling system
-│ ├── Modal management
-│ ├── Error handling
-│ └── Loading states
-│
-├── 🖼️ images/
-│ ├── food_logo.jpg # Main application logo
-│ └── Screenshot-2025-07-26-115825.jpg # Application screenshot
-│
-└── 📖 README.md # Project documentation
+- DevDishes/
+- ├── 📄 index.html # Main application structure
+- │ ├── Header with logo and title
+- │ ├── Search section with glassmorphism
+- │ ├── Results grid container
+- │ ├── Recipe modal system
+- │ └── Footer with branding
+- │
+- ├── 🎨 style.css # Complete styling system (19KB)
+- │ ├── CSS Custom Properties (40+ variables)
+- │ ├── Reset and base styles
+- │ ├── Animated background system
+- │ ├── Responsive grid layouts
+- │ ├── Modal and overlay styles
+- │ ├── Media queries (6 breakpoints)
+- │ ├── Accessibility features
+- │ └── Print optimization
+- │
+- ├── ⚙️ script.js # Application logic (10KB)
+- │ ├── API integration functions
+- │ ├── DOM manipulation utilities
+- │ ├── Event handling system
+- │ ├── Modal management
+- │ ├── Error handling
+- │ └── Loading states
+- │
+- ├── 🖼️ images/
+- │ ├── food_logo.jpg # Main application logo
+- │ └── Screenshot-2025-07-26-115825.jpg # Application screenshot
+- │
+- └── 📖 README.md # Project documentation
 
 ---
 
 ## ⚙️ Configuration & Customization
 
 ### API Configuration
-// script.js - Line 3
-const apiKey = "804549490fb34a349c078c66a4e15f00"; // Your current API key
-
-// API endpoint configuration
-const searchUrl = https://api.spoonacular.com/recipes/complexSearch +
-?query=${encodeURIComponent(ingredients)} +
-&includeIngredients=${encodeURIComponent(ingredients)} +
-&number=20&addRecipeInformation=true&fillIngredients=true&apiKey=${apiKey};
+- // script.js - Line 3
+- const apiKey = "804549490fb34a349c078c66a4e15f00"; // put here your current API key
+- 
+- // API endpoint configuration
+- const searchUrl = https://api.spoonacular.com/recipes/complexSearch +
+- ?query=${encodeURIComponent(ingredients)} +
+- &includeIngredients=${encodeURIComponent(ingredients)} +
+- &number=20&addRecipeInformation=true&fillIngredients=true&apiKey=${apiKey};
 
 
 ### Theme Customization
-/* style.css - CSS Custom Properties /
-:root {
---primary-color: #667eea; / Main brand color /
---secondary-color: #764ba2; / Secondary accent /
---accent-color: #6b73ff; / Interactive elements */
-
-/* Modify these values to change the entire color scheme /
---border-radius: 0.75rem; / Global border radius /
---transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); / Smooth transitions */
-}
+- /* style.css - CSS Custom Properties /
+- :root {
+- --primary-color: #667eea; / Main brand color /
+- --secondary-color: #764ba2; / Secondary accent /
+- --accent-color: #6b73ff; / Interactive elements */
+- 
+- /* Modify these values to change the entire color scheme /
+- --border-radius: 0.75rem; / Global border radius /
+- --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); / Smooth transitions */
+- }
 
 ### Responsive Breakpoints
 - **Mobile**: `< 576px` (36em) - Single column layout
@@ -203,7 +205,6 @@ const searchUrl = https://api.spoonacular.com/recipes/complexSearch +
 - **Ingredient Matching**: Smart ingredient-based recommendations
 - **Image Processing**: High-quality recipe images with fallbacks
 
-### Error Handling System
 
 ### Testing Checklist
 - [ ] Search functionality with various queries
@@ -217,7 +218,7 @@ const searchUrl = https://api.spoonacular.com/recipes/complexSearch +
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how to get started:
+I welcome contributions! Here's how to get started:
 
 ### Development Setup
 1. Fork the repository
@@ -254,9 +255,9 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## 📞 Support & Contact
 
-- **Issues**: [GitHub Issues](https://github.com/your-username/DevDishes/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/DevDishes/discussions)
-- **Email**: deepanshutyagi@example.com
+- **Issues**: [GitHub Issues](https://github.com/tyagigolu02/DevDishes/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/tyagigolu02/DevDishes/discussions)
+- **Email**: deepanshu.tyagi.cse.2022@gmail.com
 
 ---
 
@@ -266,6 +267,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 *Recipes served with developer precision*
 
-[⭐ Star this repo](https://github.com/your-username/DevDishes) • [🐛 Report Bug](https://github.com/your-username/DevDishes/issues) • [💡 Request Feature](https://github.com/your-username/DevDishes/issues)
+[⭐ Star this repo](https://github.com/tyagigolu02/DevDishes) • [🐛 Report Bug](https://github.com/tyagigolu02/DevDishes/issues) • [💡 Request Feature](https://github.com/tyagigolu02/DevDishes/issues)
 
 </div>
